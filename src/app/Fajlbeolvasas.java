@@ -18,7 +18,7 @@ public class Fajlbeolvasas {
 
         for (String sor : sorok) {
             String[] s = sor.split(";");
-
+            System.out.println("sor: " + sor);
             String rsz = s[0];
             int idomp = Integer.parseInt(s[1]);
             double osszeg = Double.parseDouble(s[2]);
