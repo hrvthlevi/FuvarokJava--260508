@@ -2,14 +2,21 @@ package Modell;
 
 public class Fuvar {
 
-    public enum FizMod {
-        KÁRTYA, KÉSZPÉNZ, UTALÁS, CSEKK, ISMERETLEN
-    }
+//    public enum FizMod {
+//        KÁRTYA, KÉSZPÉNZ, UTALÁS, CSEKK, ISMERETLEN
+//    }
 
     private String rsz;
     private int idomp;
     private double osszeg;
-    private FizMod fizMod;
+    private String fizMod;
+
+    public Fuvar(String rsz, int idomp, double osszeg, String fizMod) {
+        this.rsz = rsz;
+        this.idomp = idomp;
+        this.osszeg = osszeg;
+        this.fizMod = fizMod;
+    }
 
     public String getRsz() {
         return rsz;
@@ -23,7 +30,7 @@ public class Fuvar {
         return osszeg;
     }
 
-    public FizMod getFizMod() {
+    public String getFizMod() {
         return fizMod;
     }
 
